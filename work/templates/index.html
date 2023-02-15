@@ -1,0 +1,25 @@
+{% load static %}
+<html>
+  <head>
+    <title>Home</title>
+    
+  </head>
+  <body>
+    
+    <h1>List item</h1>
+    {% for item in items %} 
+    <ul>
+        <li>
+          Name: <a href="{% url 'item' item.id %}">{{ item.name }} </a>
+        </li>
+        <li>Description: {{ item.description }}...</li>
+        <li>
+          Price: {{ item.price }},00$
+        </li>
+      </ul>
+      
+      {% endfor %}
+    
+    
+  </body>
+</html>

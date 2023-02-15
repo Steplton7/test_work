@@ -116,5 +116,5 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-STRIPE_PUBLISHABLE_KEY = '<your test publishable key here>'
-STRIPE_SECRET_KEY = '<your test secret key here>'
+STRIPE_PUBLISHABLE_KEY = 'pk_test_51Mb5HCKuoNPppNphTCsSZiU0xHGiEVceHj3IVB01kldaT78S3z8q84yIssqMHbAxoXv0a6I2MJmeDX3Ojpwu3hMs00WrBJh61M'
+STRIPE_SECRET_KEY = 'sk_test_51Mb5HCKuoNPppNph9E6DG18hHMteNUbiIJ7ZMpsJO4CZNAX5Nj40XMmz2AazIpHe93itKLxZXtkYay7osdgrJ0yA00NaVq0quB'

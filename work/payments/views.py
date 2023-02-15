@@ -10,6 +10,13 @@ from django.views.generic.base import TemplateView
 
 stripe.api_key = settings.STRIPE_SECRET_KEY
 
+def index(request):
+    items = Item.objects.all()
+    context = {
+        'items': items, 
+    }
+    return render(request, 'index.html', context)
+
 
 def item_detail(request, item_id):
     item = get_object_or_404(Item, id=item_id)
