@@ -1,14 +1,5 @@
-{% load static %}
-<html>
-  <head>
-    <title>Buy Item 1</title>
-    <script src="https://js.stripe.com/v3/"></script>
-    
-    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>    
-  </head>
-  <body>
-    <script type="text/javascript">
-      console.log("Sanity check!");
+
+console.log("Sanity check!");
 
 // Get Stripe publishable key
 fetch("/config/")
@@ -33,11 +24,3 @@ fetch("/config/")
     });
   });
 });
-</script>
-    <h1>{{ item.name }}</h1>
-    <p>Description of {{ item.description }}</p>
-    <p>{{ item.price }},00 $</p>
-    <button id="submitBtn">Buy</button>
-    
-  </body>
-</html>

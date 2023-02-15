@@ -4,7 +4,7 @@ from .models import Item
 
 
 class ItemAdmin(admin.ModelAdmin):
-    list_display = ('name', 'description', 'price')
+    list_display = ('id','name', 'description', 'price')
     search_fields = ('name', 'description',)
     list_filter = ('name','price')
 
